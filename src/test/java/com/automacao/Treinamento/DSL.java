@@ -1,3 +1,5 @@
+package com.automacao.Treinamento;
+
 import java.util.ArrayList;
 import java.util.List;
 

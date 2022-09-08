@@ -1,32 +1,18 @@
+package com.automacao.Treinamento;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+public class TesteCampoTreinamentoTest extends BaseTest {
 
-public class TesteCampoTreinamento {
-	
-	private WebDriver driver;
+    private WebDriver driver;
 	private DSL dsl;
-
-	@Before
-	public void inicializa(){
-		driver = new FirefoxDriver();
-		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
-		dsl = new DSL(driver);
-	}
-	
-	@After
-	public void finaliza(){
-		driver.quit();
-	}
 	
 	@Test
 	public void testeTextField(){
@@ -111,5 +97,4 @@ public class TesteCampoTreinamento {
 	}
 	
 }
-
 
